@@ -1103,8 +1103,8 @@ vm-browserify@~0.0.1:
     indexof "0.0.1"
 
 widget-styling@~1:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/widget-styling/-/widget-styling-1.0.0.tgz#72ff66298d30df18f3b6cdbee1e41640c34255f8"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/widget-styling/-/widget-styling-1.0.1.tgz#fa56792a72a23d53e47e90748b883837efab5882"
   dependencies:
     dataset "~0"
 
