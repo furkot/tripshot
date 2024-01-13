@@ -1,4 +1,10 @@
 
+2.0.0 / 2024-01-13
+==================
+
+ * modernize and format code
+ * replace browserify with esbuild
+
 1.0.3 / 2017-11-10
 ==================
 
