@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
 
 # Furkot Tripshot Widget
 
@@ -41,11 +41,11 @@ MIT © [Natalia Kowalczyk](https://furkot.com)
 [help]: https://help.furkot.com/widgets/embed.html
 [npm]: https://www.npmjs.com/
 
-[npm-image]: https://img.shields.io/npm/v/tripshot.svg
+[npm-image]: https://img.shields.io/npm/v/tripshot
 [npm-url]: https://npmjs.org/package/tripshot
 
-[travis-url]: https://travis-ci.org/furkot/tripshot
-[travis-image]: https://img.shields.io/travis/furkot/tripshot.svg
+[build-url]: https://github.com/furkot/tripshot/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/furkot/tripshot/check.yaml?branch=main
 
-[gemnasium-image]: https://img.shields.io/gemnasium/furkot/tripshot.svg
-[gemnasium-url]: https://gemnasium.com/furkot/tripshot
+[deps-image]: https://img.shields.io/librariesio/release/npm/tripshot
+[deps-url]: https://libraries.io/npm/tripshot
