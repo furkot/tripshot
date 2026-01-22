@@ -16,11 +16,8 @@ all: check compile
 
 check: lint test
 
-lint: node_modules
+lint:
 	$(BIN)/jshint lib test
-
-test: node_modules
-	node --test
 
 compile: $(SCRIPT_NAME).js
 
@@ -35,22 +32,19 @@ ESBUILD_OPTS += --bundle \
 	--target=es2019
 
 
-$(SCRIPT_NAME).js: lib/index.js $(SRC) | node_modules build
+$(SCRIPT_NAME).js: lib/index.js $(SRC) | build
 	$(BIN)/esbuild $< \
 		$(ESBUILD_OPTS) \
 		--sourcemap=linked \
 		--outfile=$@
 
-$(SCRIPT_NAME).min.js: lib/index.js $(SRC) | node_modules build
+$(SCRIPT_NAME).min.js: lib/index.js $(SRC) | build
 	$(BIN)/esbuild $< \
 		$(ESBUILD_OPTS) \
 		--drop:console \
 		--drop:debugger \
 		--minify \
 		--outfile=$@
-
-node_modules: package.json
-	yarn
 
 clean:
 	rm -rf $(BUILD_DIR)
