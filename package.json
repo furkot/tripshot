@@ -21,7 +21,7 @@
     "widget-styling": "~1"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "~3",
+    "@biomejs/biome": "2.3.14",
     "esbuild": "^0.19.11"
   },
   "scripts": {

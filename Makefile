@@ -9,15 +9,15 @@ SRC = $(wildcard lib/*.js)
 %.gz: %
 	gzip --best --stdout $< > $@
 
-%.min.js: %.js
-	$(BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
-
 all: check compile
 
 check: lint test
 
 lint:
-	$(BIN)/jshint lib test
+	$(BIN)/biome ci
+
+format:
+	$(BIN)/biome check --write
 
 compile: $(SCRIPT_NAME).js
 
