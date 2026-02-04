@@ -1,4 +1,11 @@
 
+2.0.1 / 2026-02-04
+==================
+
+ * upgrade `esbuild` to 0.27.2
+ * replace `jshint` with `biome`
+ * update github actions
+
 2.0.0 / 2024-01-13
 ==================
 
